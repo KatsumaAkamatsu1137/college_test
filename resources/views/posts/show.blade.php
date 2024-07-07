@@ -14,7 +14,7 @@
             {{ $post->title }}
         </h1>
         <div class="category">
-            <a href="">{{ $post->category->name }}</a>
+            <a href="/categories/{{ $post->category->id }}">{{ $post->category->name }}</a>
         </div>
         <div class="content">
             <div class="content__post">
