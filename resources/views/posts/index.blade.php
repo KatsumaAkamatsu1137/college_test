@@ -5,6 +5,12 @@
 		<title>Blog</title>
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+		<style>
+			.loginuser {
+            	margin-top: 20px; /* ここでスペースを追加 */
+        	}
+		</style>
+        
 	</head>
 	<body>
 		<h1>Blog Name</h1>
@@ -24,6 +30,9 @@
 					</form>
 				</div>
 			@endforeach
+		</div>
+		<div class='loginuser'>
+			ログインユーザー：{{ Auth::user()->name }}
 		</div>
 		<div class='paginate'>
 				{{$posts->links()}}
